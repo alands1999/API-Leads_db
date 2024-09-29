@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+.gradient {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.div_Form {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #EFFFCD;
+    border-radius: 20px;
+    justify-content: space-around;
+    text-align: center;
+    color: #EFFFCD;
+    margin-bottom: 10px;
+}
+.div_Form h2 {
+    font-family: arial;
+}
+
+.div_Form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.div_Form label {
+    margin-bottom: 5px;
+}
+
+
+.div_Form .div_input input {
+    width: 180px;
+    background-color: transparent;
+    border: 1px solid #DCE9BE;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    align-self: center;
+    box-sizing: border-box;
+}
+
+.tel input {
+    margin-right: 17px;
+}
+
+
+.botao_enviar {
+    width: 180px;
+    align-self: center;
+    background-color: transparent;
+    border: 1px solid #DCE9BE;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    color: wheat;
+}
+
+.botao_enviar:hover {
+    background-color: #EFFFCD;
+    color: #2E2633;
+    transition: 1s;
+}
+
+.hidden {
+    display: none;
+}
+
+
+#message img {
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.danceBottom { animation-name: danceBottom; transform-origin: bottom }
+@keyframes danceBottom {
+    16% { transform: skew(-14deg) }
+    33% { transform: skew(12deg) }
+    49% { transform: skew(-8deg) }
+    66% { transform: skew(6deg) }
+    83% { transform: skew(-4deg) }
+}
